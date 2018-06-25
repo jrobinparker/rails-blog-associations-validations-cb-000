@@ -15,7 +15,7 @@ describe 'tags for posts', :type => :feature do
   it 'can create a post with adding one tag' do
     puts cute.inspect
     visit '/posts/new'
-    element = page.find("#post_name")
+    element = page.find("Post Name")
     element.set(@post[:post_name])
     element = page.find("#post_content")
     element.set(@post[:post_content])
