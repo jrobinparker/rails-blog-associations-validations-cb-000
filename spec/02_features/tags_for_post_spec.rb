@@ -17,7 +17,7 @@ describe 'tags for posts', :type => :feature do
     visit '/posts/new'
     element = page.find("#post_name")
     element.set(@post[:post_name])
-    element = page.find("Post Content")
+    element = page.find("#post_content")
     element.set(@post[:post_content])
     check('cute')
     click_button('Create Post')
