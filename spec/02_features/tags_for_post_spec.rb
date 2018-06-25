@@ -4,7 +4,7 @@ describe 'tags for posts', :type => :feature do
 
   it 'can create a post without adding tags' do
     visit '/posts/new'
-    element = page.find("#post_post_name")
+    element = page.find("post_post_name")
     element.set(@post[:post_name])
     element = page.find("#Post Content")
     element.set(@post[:post_content])
